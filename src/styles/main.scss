@@ -1,0 +1,40 @@
+@import './normolize.scss';
+
+$brand-color: #333;
+
+.header{
+    background-color: #f1f1f1;
+    padding: 0 15px;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 30px;
+        font-family: fantasy;
+        color: $brand-color;
+        text-shadow: 0 0 15px $brand-color;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        .menu-link {
+            font-size: 14px;
+            text-decoration: none;
+            color: #a19292;
+            transition: 0.4s
+        }
+
+        .menu-link:hover {
+            color: blueviolet;
+            box-shadow: 0 0 15px blueviolet;
+            text-shadow: 0 0 15px $brand-color;
+        }
+    }
+}
